@@ -16,6 +16,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       currentIndex = index;
     });
+    Navigator.pop(context);
   }
 
   Widget _getBody() {
@@ -153,16 +154,16 @@ class _HomePageState extends State<HomePage> {
                   const Divider(),
                   Positioned(
                       child: ListTile(
-                        leading: const Icon(
-                          Icons.settings,
-                          color: textColor,
-                        ),
-                        title: const Text(
-                          'Settings',
-                          style: TextStyle(color: textColor),
-                        ),
-                        onTap: () {},
-                      )),
+                    leading: const Icon(
+                      Icons.settings,
+                      color: textColor,
+                    ),
+                    title: const Text(
+                      'Settings',
+                      style: TextStyle(color: textColor),
+                    ),
+                    onTap: () {},
+                  )),
                 ],
               )
             ],

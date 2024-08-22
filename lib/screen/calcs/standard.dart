@@ -168,9 +168,9 @@ class _StandardCalcState extends State<StandardCalc>
             ),
             Row(
               children: [
-                _buildButton('AC', textColor, buttonColor),
-                _buildButton('+/-', textColor, buttonColor),
-                _buildButton('%', textColor, buttonColor),
+                _buildButton('AC', bgColor, faintColor),
+                _buildButton('+/-', bgColor, faintColor),
+                _buildButton('%', bgColor, faintColor),
                 _buildButton('/', textColor, operatorColor),
               ],
             ),
