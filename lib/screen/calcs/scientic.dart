@@ -333,7 +333,7 @@ class _ScientificCalcState extends State<ScientificCalc>
         bgColor: bgColor,
         textSize: 18, // Adjust this value to change text size
         callback: _handleButtonPress,
-        width: 90, // Adjust this value to change button width
+        width: 70, // Adjust this value to change button width
         height: 70, // Adjust this value to change button height
       ),
     );
