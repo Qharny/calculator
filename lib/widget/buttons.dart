@@ -16,8 +16,8 @@ class CalculatorButton extends StatelessWidget {
     required this.bgColor,
     required this.textSize,
     required this.callback,
-    this.width = 60, // Default width
-    this.height = 60, // Default height
+    this.width = 70,
+    this.height = 50,
   });
 
   @override
@@ -32,13 +32,20 @@ class CalculatorButton extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),
           ),
+          padding: EdgeInsets.zero, // Remove default padding
         ),
         onPressed: () => callback(text),
-        child: Text(
-          text,
-          style: TextStyle(
-            fontSize: textSize,
-            color: textColor,
+        child: Center( // Center the text
+          child: FittedBox( // Use FittedBox to scale text if needed
+            fit: BoxFit.scaleDown,
+            child: Text(
+              text,
+              style: TextStyle(
+                fontSize: textSize,
+                color: textColor,
+              ),
+              textAlign: TextAlign.center, // Ensure text is centered
+            ),
           ),
         ),
       ),

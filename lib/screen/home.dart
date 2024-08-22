@@ -1,5 +1,5 @@
 import 'package:calculator/constant/colors.dart';
-import 'package:calculator/screen/calcs/scientic.dart';
+import 'package:calculator/screen/calcs/scientific.dart';
 import 'package:calculator/screen/calcs/standard.dart';
 import 'package:flutter/material.dart';
 
