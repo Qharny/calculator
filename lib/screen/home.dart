@@ -1,4 +1,6 @@
 import 'package:calculator/constant/colors.dart';
+import 'package:calculator/screen/calcs/date.dart';
+import 'package:calculator/screen/calcs/programmer.dart';
 import 'package:calculator/screen/calcs/scientific.dart';
 import 'package:calculator/screen/calcs/standard.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +32,11 @@ class _HomePageState extends State<HomePage> {
         );
       case 2:
         return const Center(
-          child: Text('Programmer', style: TextStyle(color: textColor)),
+          child: ProgrammerCalc(),
+        );
+      case 3:
+        return const Center(
+          child: DateCalculator(),
         );
       default:
         return const Center(child: StandardCalc());
